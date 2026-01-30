@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class DigitCounter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter an integer number: ");
+        String numberStr = scanner.next();
+        int digitCount = numberStr.length();
+        if (numberStr.startsWith("-")) {
+            digitCount--;
+        }
+        System.out.println("The number of digits in " + numberStr + " is: " + digitCount);
+        scanner.close();
+    }
+}
